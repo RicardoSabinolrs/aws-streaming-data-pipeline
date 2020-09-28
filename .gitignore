@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Terraform
+terraform/.terraform
+terraform/terraform.*
+
+# lambdas
+lambdas/punk_api_cleaned/package
+lambdas/punk_api_cleaned/punk_api_cleaned.zip
+lambdas/punk_api_raw/package
+lambdas/punk_api_raw/punk_api_raw.zip
+
+.idea/
