@@ -7,3 +7,8 @@ output "lambda_to_kinesis_stream_role_arn" {
   value       = aws_iam_role.lambda_raw_to_kinesis_stream_role.arn
   description = "Lambda To Kinesis Role ARN"
 }
+
+output "lambda_raw_role_arn" {
+  value       = aws_iam_role.lambda_raw_role.arn
+  description = "Lambda Role ARN"
+}

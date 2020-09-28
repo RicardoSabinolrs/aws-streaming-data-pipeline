@@ -28,6 +28,12 @@ variable "lambda_raw_policy_name" {
   default     = "LambdaPolicy"
 }
 
+variable "lambda_raw_role_name" {
+  description = "Name of the Firehose Policy"
+  type        = string
+  default     = "LambdaRawRole"
+}
+
 variable "bucket_arn" {
   description = "Destination S3 bucket ARN"
   type        = string
