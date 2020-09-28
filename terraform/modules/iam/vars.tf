@@ -1,4 +1,4 @@
-variable "firehose_role_delivery_name" {
+variable "firehose_role_name" {
   description = "Name of the role chosen for Firehose"
   type        = string
   default     = "FirehoseRole"
@@ -16,6 +16,24 @@ variable "kinesis_stream_arn" {
   default     = ""
 }
 
+variable "firehole_policy_name" {
+  description = "Name of the Firehose Policy"
+  type        = string
+  default     = "FirehosePolicy"
+}
+
+variable "lambda_raw_policy_name" {
+  description = "Name of the Firehose Policy"
+  type        = string
+  default     = "LambdaPolicy"
+}
+
+variable "bucket_arn" {
+  description = "Destination S3 bucket ARN"
+  type        = string
+  default     = ""
+}
+
 variable "bucket_raw_arn" {
   description = "Destination S3 bucket ARN"
   type        = string
@@ -25,22 +43,4 @@ variable "bucket_cleaned_arn" {
   description = "Destination S3 bucket ARN"
   type        = string
   default     = ""
-}
-
-variable "lambda_processor_name_arn" {
-  description = "Destination S3 bucket ARN"
-  type        = string
-  default     = ""
-}
-
-variable "lambda_function_role_arn" {
-  description = "Destination S3 bucket ARN"
-  type        = string
-  default     = "lambda_function_role"
-}
-
-variable "kinesis_firehose_stream_role_arn" {
-  description = "kinesis Firehose Stream Role ARN"
-  type        = string
-  default     = "kinesis_firehose_stream_role"
 }

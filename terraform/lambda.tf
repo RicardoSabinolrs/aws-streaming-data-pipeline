@@ -13,5 +13,5 @@ module "punk_api_raw_data" {
 
 module "punk_api_cleaned_data" {
   source                  = "./modules/lambda/function/cleaned"
-  role_arn                = module.iam_punk_api.lambda_function_role
+  role_arn                = module.iam_punk_api.lambda_to_kinesis_stream_role_arn
 }
